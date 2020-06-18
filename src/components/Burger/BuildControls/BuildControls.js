@@ -34,6 +34,13 @@ const buildControls = (props) => (
         removed={() => props.ingredientRemoved(el.type)}
       />
     ))}
+    <button
+      disabled={props.price === 4}
+      className={classes.OrderButton}
+      onClick={() => props.ordered()}
+    >
+      ORDER NOW
+    </button>
   </div>
 );
 export default buildControls;
