@@ -10,6 +10,7 @@ return (
         <ul>
             {ingredientsSummary}
         </ul>
+<p><strong>Total Price: {props.price.toFixed(2)}</strong></p>
         <p>Continue to Checkout?</p>
         <Button btnType="Danger" clicked={props.purchaseCanceled}>CANCEL</Button>
         <Button btnType="Success" clicked={props.purchaseContinued}>CONTINUE</Button>
